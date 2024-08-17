@@ -15,11 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <div className="w-full mx-auto max-w-6xl">
         <Navbar/>
         {children}
         <Footer/>
-        </div>
         </body>
     </html>
   );

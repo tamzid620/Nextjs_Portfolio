@@ -1,0 +1,8 @@
+.hover-hr:hover hr {
+    opacity: 1; 
+  }
+  
+  .hover-hr hr {
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+  }

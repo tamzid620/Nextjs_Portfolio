@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import logo from "@/assests/icon/svgicon.png";
 import Link from "next/link";
+import "./Navbar.css"
 
 const Navbar = () => {
   const navLists = [
@@ -28,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center z-10 bg-gray-500 opacity-90 py-5 w-full">
+    <nav className="flex justify-between items-center fixed z-10 bg-gray-300 opacity-90 py-5 w-full px-16">
       {/* Logo part */}
       <div className="flex items-center gap-1">
         <Image src={logo} alt="portfolio logo" className="w-[35px]" />
@@ -42,9 +43,14 @@ const Navbar = () => {
       <div>
         <ul className="flex gap-5 uppercase">
           {navLists.map(({ path, title }) => (
-            <li key={path} className="hover:text-sky-300 transition-colors">
-              <Link href={path}>{title}</Link>
-            </li>
+           <div key={path} className="hover-hr">
+               <li className="hover:text-sky-300 transition-colors">
+                 <Link href={path}>{title}</Link>
+               </li>
+               <div className="text-center flex justify-center">
+                <hr className="border border-sky-500 bg-sky-500 h-[2px] w-[40px]" />
+                </div>
+           </div>
           ))}
         </ul>
       </div>
