@@ -1,3 +1,4 @@
+import './MySkills.css'
 import html from "@/assests/icon/html.png";
 import css from "@/assests/icon/css.png";
 import JavaScript from "@/assests/icon/js.png";
@@ -18,6 +19,8 @@ import "aos/dist/aos.css";
 import { Nunito_Sans } from "next/font/google";
 import { Arsenal } from "next/font/google";
 import Image from "next/image";
+
+
 
 const nunito = Nunito_Sans({ subsets: ["latin"] });
 const arsenal = Arsenal({
@@ -115,10 +118,15 @@ const MySkills = () => {
               data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="300"
-              className="shadow-purple-200 shadow-lg bg-transparent border-t-2 border-purple-200 p-2 rounded-sm w-[160px] flex justify-center"
+              className="shadow-purple-200 shadow-lg bg-transparent border-t-2 border-purple-200 py-5 rounded-sm w-[160px]  flex justify-center"
             >
               <div className="inner-element">
-                <Image className="w-[100px]" src={logo} alt="" /> <br />
+                <div className="card-zoom">
+                <figure className="zoom-effect">
+                <Image className="w-[100px]" src={logo} alt="" />
+                </figure>
+                 <br />
+                </div>
                 <h1 className="flex justify-center">{title}</h1>
               </div>
             </div>
