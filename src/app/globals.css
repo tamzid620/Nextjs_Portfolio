@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Arsenal SC';
+    src: url('/fonts/ArsenalSC/arsenal-sc.woff2') format('woff2'),
+         url('/fonts/ArsenalSC/arsenal-sc.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
