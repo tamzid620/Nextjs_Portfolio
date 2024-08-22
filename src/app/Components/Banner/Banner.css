@@ -1,0 +1,19 @@
+/* Define keyframes for the animation */
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Apply animation to the images */
+  .animate-bounce {
+    animation: bounce 2s infinite;
+  }
+
+  .bannerFiterimg{
+    filter: drop-shadow(1px 1px 20px rgb(108, 3, 165)) ;
+}
+  

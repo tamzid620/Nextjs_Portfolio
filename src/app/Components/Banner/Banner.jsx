@@ -1,14 +1,16 @@
+import "./Banner.css";
 import bannerimg from "@/assests/image/result.png";
 import Typewriter from "react-ts-typewriter";
 import { Nunito_Sans } from "next/font/google";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
+import nextjs from "@/assests/icon/Next.js.png";
+import reactjs from "@/assests/icon/reactLogo-modified.png";
 
 const nunito = Nunito_Sans({ subsets: ["latin"] });
 
 const Banner = () => {
-
   Aos.init();
 
   return (
@@ -19,10 +21,7 @@ const Banner = () => {
       >
         {/* Heading section */}
         <div className="sm:ms-3 lg:ms-20 lg:mt-[150px] md:mt-[150px] sm:mt-[120px]">
-          <p
-            
-            className="font-semibold"
-          >
+          <p className="font-semibold">
             <span
               data-aos="fade-down"
               data-aos-easing="linear"
@@ -49,12 +48,12 @@ const Banner = () => {
               data-aos-easing="linear"
               data-aos-duration="1500"
             >
-              A passionate web developer dedicated to crafting exceptional online
-              experiences. With a keen eye for design and a love for coding, I
-              specialize in creating dynamic and user-friendly websites that leave
-              a lasting impression from front-end development using HTML, CSS, Nextjs, Reactjs,
-              and JavaScript to back-end programming with Expressjs and Mongodb
-              and more.
+              A passionate web developer dedicated to crafting exceptional
+              online experiences. With a keen eye for design and a love for
+              coding, I specialize in creating dynamic and user-friendly
+              websites that leave a lasting impression from front-end
+              development using HTML, CSS, Nextjs, Reactjs, and JavaScript to
+              back-end programming with Expressjs and Mongodb and more.
             </span>
           </p>
           <a
@@ -63,7 +62,6 @@ const Banner = () => {
             target="_blank"
           >
             <button
-              
               data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="100"
@@ -77,8 +75,20 @@ const Banner = () => {
           </a>
         </div>
         {/* Banner picture section */}
-        <div>
-          <Image className="w-[350px] lg:mt-[100px] md:mt-0 sm:mt-0 rounded-full" src={bannerimg} alt="Banner Image" />
+        <div className="relative">
+        <div className="relative">
+          <Image
+            className=" w-[350px] lg:mt-[100px] md:mt-0 sm:mt-0 rounded-full"
+            src={bannerimg}
+            alt="Banner Image"
+          />
+          <div className="animate-bounce absolute top-[0px] left-[0px] mt-[100px] ml-[0px]">
+            <Image className="w-[55px] bannerFiterimg" src={nextjs} alt="" />
+          </div>
+          <div className="animate-bounce absolute bottom-[0px] right-[0px] mb-[60px] -mr-[30px]">
+            <Image className="w-[55px] bannerFiterimg" src={reactjs} alt="" />
+          </div>
+        </div>
         </div>
       </div>
     </div>
