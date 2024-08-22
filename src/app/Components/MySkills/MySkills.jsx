@@ -1,4 +1,9 @@
 import './MySkills.css'
+import Image from "next/image";
+import { Nunito_Sans } from "next/font/google";
+import { Arsenal } from "next/font/google";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import html from "@/assests/icon/html.png";
 import css from "@/assests/icon/css.png";
 import JavaScript from "@/assests/icon/js.png";
@@ -14,11 +19,7 @@ import firebase from "@/assests/icon/firebase.png";
 import redux from "@/assests/icon/redux.png";
 import gitHub from "@/assests/icon/github.png";
 import materialUi from "@/assests/icon/material ui .png";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { Nunito_Sans } from "next/font/google";
-import { Arsenal } from "next/font/google";
-import Image from "next/image";
+import { useEffect } from 'react';
 
 
 
@@ -29,7 +30,9 @@ const arsenal = Arsenal({
 });
 
 const MySkills = () => {
-  Aos.init();
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   const skillData = [
     {

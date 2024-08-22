@@ -66,7 +66,7 @@ const Banner = () => {
               
               data-aos="fade-down"
               data-aos-easing="linear"
-              data-aos-duration="300"
+              data-aos-duration="100"
               className="w-[85px] px-[0px] py-[5px] rounded-sm text-white mt-3
               bg-gradient-to-t from-indigo-900 to-purple-500
                hover:from-purple-500 hover:to-indigo-900 
