@@ -18,12 +18,13 @@ const Home = () => {
     return null;
   }
 
+  
   return (
     <div className='pt-[75px] max-w-6xl mx-auto'>
       <ParticlesBg num={80} type="cobweb" bg={true} />
       <Banner/>
-      <MySkills/>
-      <MyEmail/>
+      <MySkills href="#my-skills"/>
+      <MyEmail href = "#contact"/>
     </div>
   );
 };

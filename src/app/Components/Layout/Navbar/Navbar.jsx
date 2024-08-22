@@ -33,6 +33,11 @@ const Navbar = () => {
     },
   ];
 
+  const handleRouteClick = (event) => {
+    event.preventDefault(); // Prevent default anchor behavior
+    document.querySelector('#my-skills').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+  };
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setIsVisible(true);
@@ -72,7 +77,7 @@ const Navbar = () => {
         <ul className="flex gap-5 uppercase">
           {navLists.map(({ path, title }) => (
            <div key={path} className="hover-hr">
-               <li className="text-white hover:text-purple-200 transition-colors">
+               <li onClick={handleRouteClick} className="text-white hover:text-purple-200 transition-colors">
                  <Link href={path}>{title}</Link>
                </li>
                <div className="text-center flex justify-center">
