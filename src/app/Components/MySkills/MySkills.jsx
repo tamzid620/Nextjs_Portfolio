@@ -118,12 +118,12 @@ const MySkills = () => {
               data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="300"
-              className="shadow-purple-200 shadow-lg bg-transparent border-t-2 border-purple-200 py-5 rounded-sm w-[160px]  flex justify-center"
+              className=" py-5 rounded-sm w-[160px]  flex justify-center"
             >
               <div className="inner-element">
-                <div className="card-zoom">
+                <div className="h-[100px]">
                 <figure className="zoom-effect">
-                <Image className="w-[100px]" src={logo} alt="" />
+                <Image className="w-[100px] fiterimg" src={logo} alt="" />
                 </figure>
                  <br />
                 </div>

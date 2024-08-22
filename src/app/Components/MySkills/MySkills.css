@@ -1,13 +1,15 @@
-.card-zoom {
+/* .card-zoom {
     overflow: hidden;
-    height: 100px;
 }
 .card-image{
     height: 250px;
-}
+} */
 .zoom-effect {
     transition: transform 0.5s ease;
 }
 .zoom-effect:hover{
     transform: scale(1.1);
+}
+.fiterimg{
+    filter: drop-shadow(1px 1px 20px rgba(108, 3, 165, 0.518)) ;
 }

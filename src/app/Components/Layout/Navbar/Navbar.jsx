@@ -1,10 +1,15 @@
+"use client" ;
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { IoIosArrowDropupCircle } from "react-icons/io";
 import logo from "@/assests/icon/svgicon.png";
 import Link from "next/link";
 import "./Navbar.css"
 
 const Navbar = () => {
+
+  const [isVisible, setIsVisible] = useState(false);
+
   const navLists = [
     {
       path: "/",
@@ -28,7 +33,28 @@ const Navbar = () => {
     },
   ];
 
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
+    <div>
     <nav className="flex justify-between items-center 
     fixed z-10 py-5 w-full px-16
      bg-purple-900  shadow-md shadow-gray-800">
@@ -57,6 +83,18 @@ const Navbar = () => {
         </ul>
       </div>
     </nav>
+    {isVisible && (
+        <div 
+        onClick={scrollToTop}
+        title="slide button"
+        className="fixed bottom-4 right-4 bg-black 
+        shadow-lg shadow-gray-800
+         rounded-full w-[50px] border border-gray-300 z-50"
+        >
+          <IoIosArrowDropupCircle className="text-purple-200 hover:text-white" size={50} />
+        </div>
+      )}
+    </div>
   );
 };
 
