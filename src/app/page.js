@@ -23,7 +23,7 @@ const Home = () => {
     <div className='pt-[75px] max-w-6xl mx-auto'>
       <ParticlesBg num={80} type="cobweb" bg={true} />
       <Banner/>
-      <MySkills href="#my-skills"/>
+      <MySkills href="#mySkills"/>
       <MyEmail href = "#contact"/>
     </div>
   );

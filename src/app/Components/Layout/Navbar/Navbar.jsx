@@ -16,28 +16,32 @@ const Navbar = () => {
       title: "Home",
     },
     {
-      path: "/",
+      path: "#mySkills",
       title: "Skills",
     },
     {
-      path: "/",
+      path: "",
       title: "Projects",
     },
     {
-      path: "/",
+      path: "",
       title: "About",
     },
     {
-      path: "/",
+      path: "#contact",
       title: "Contact",
     },
   ];
 
-  const handleRouteClick = (event) => {
-    event.preventDefault(); // Prevent default anchor behavior
-    document.querySelector('#my-skills').scrollIntoView({ behavior: 'smooth' });
-    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+  // Handle Route section ---------------------------------
+  const handleRouteClick = ( e, path ) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(path);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
   };
+
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setIsVisible(true);
@@ -64,6 +68,7 @@ const Navbar = () => {
     fixed z-10 py-5 w-full px-16
      bg-purple-900  shadow-md shadow-gray-800">
       {/* Logo part */}
+      <Link href="/">
       <div className="flex items-center gap-1">
         <Image src={logo} alt="portfolio logo" className="w-[35px]" />
         <h1 className="text-2xl font-bold uppercase text-purple-300">
@@ -71,13 +76,14 @@ const Navbar = () => {
           <span>zid</span>
         </h1>
       </div>
+      </Link>
 
       {/* Navlist part */}
       <div>
         <ul className="flex gap-5 uppercase">
           {navLists.map(({ path, title }) => (
            <div key={path} className="hover-hr">
-               <li onClick={handleRouteClick} className="text-white hover:text-purple-200 transition-colors">
+               <li onClick={(e) => handleRouteClick(e, path)} className="text-white hover:text-purple-200 transition-colors">
                  <Link href={path}>{title}</Link>
                </li>
                <div className="text-center flex justify-center">

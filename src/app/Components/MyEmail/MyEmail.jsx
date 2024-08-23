@@ -20,17 +20,10 @@ emailjs.init("PIOjzCl1ftxF_58QU");
 const MyEmail = () => {
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
     setLoading(true);
     
-
-    // Swal.fire({
-    //     icon: 'success',
-    //     title: 'Email Sent',
-    //     showConfirmButton: false,
-    //     timer: 1500
-    // })
     const params = {
       from_name: document.getElementById("fullName").value,
       email_id: document.getElementById("email_id").value,
@@ -39,7 +32,7 @@ const MyEmail = () => {
     };
     emailjs
       .send("service_ajtda09", "template_42ulb2t", params)
-      .then(function (res) {
+      .then(() =>{
         Swal.fire({
           position: "center",
           icon: "success",
@@ -106,7 +99,7 @@ const MyEmail = () => {
                   </h2>
                   <div className="grid grid-flow-col gap-4">
                     <div>
-                      <a href="https://www.facebook.com/tamzid.ull.monir512">
+                      <a target="_blank" href="https://www.facebook.com/tamzid.ull.monir512">
                         <Image
                           style={{ width: "30px" }}
                           src={facebook}
@@ -116,7 +109,7 @@ const MyEmail = () => {
                     </div>
 
                     <div>
-                      <a href="https://www.instagram.com/Tamzid_Ull_Monir/">
+                      <a target="_blank" href="https://www.instagram.com/Tamzid_Ull_Monir/">
                         <Image
                           style={{ width: "30px" }}
                           src={instagram}
@@ -126,7 +119,7 @@ const MyEmail = () => {
                     </div>
 
                     <div>
-                      <a href="https://www.linkedin.com/in/tamzid-monir-96b163260/">
+                      <a target="_blank" href="https://www.linkedin.com/in/tamzid-ull-monir-96b163260/">
                         <Image
                           style={{ width: "30px" }}
                           src={linkedin}
@@ -136,7 +129,7 @@ const MyEmail = () => {
                     </div>
 
                     <div>
-                      <a href="https://github.com/tamzid620">
+                      <a target="_blank" href="https://github.com/tamzid620">
                         <Image style={{ width: "30px" }} src={github} alt="" />
                       </a>
                     </div>
@@ -151,7 +144,7 @@ const MyEmail = () => {
                 onSubmit={handleSubmit}
                 action="/submit-feedback"
                 method="post"
-                className="bg-transparent shadow-2xl lg:w-[550px] sm:w-[350px] mx-auto p-4  rounded-md"
+                className="bg-transparent shadow-xl shadow-purple-300 lg:w-[550px] sm:w-[350px] mx-auto p-4  rounded-md"
               >
                 <div>
                   <label
