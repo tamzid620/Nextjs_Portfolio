@@ -67,8 +67,8 @@ const Banner = () => {
               data-aos-duration="100"
               className="w-[85px] px-[0px] py-[5px] rounded-sm text-white mt-3
               bg-gradient-to-t from-indigo-900 to-purple-500
-               hover:from-purple-500 hover:to-indigo-900 
-               shadow-2xl "
+              shadow-lg shadow-purple-900
+               hover:from-purple-500 hover:to-indigo-900"
             >
               Resume
             </button>
