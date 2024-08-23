@@ -19,7 +19,7 @@ const ClientWrapper = ({ children }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 seconds loading
+    }, 3000); 
 
     return () => clearTimeout(timer);
   }, []);
