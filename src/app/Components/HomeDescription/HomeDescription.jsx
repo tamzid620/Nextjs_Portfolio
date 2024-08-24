@@ -29,7 +29,7 @@ const HomeDescription = () => {
     },
     {
       logo: img3,
-      title: "Full-Stack Mastery",
+      title: "Mern-Stack Mastery",
       description:
         "From crafting dynamic front-ends to building powerful back-end systems,I offer full-stack development services, ,Complete front-end to back-end solutions with efficient code",
     },

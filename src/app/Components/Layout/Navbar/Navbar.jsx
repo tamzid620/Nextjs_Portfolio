@@ -65,7 +65,7 @@ const Navbar = () => {
   return (
     <div>
     <nav className="flex justify-between items-center 
-    fixed z-10 py-5 w-full px-16
+    fixed z-10 py-5 w-full lg:px-16
      bg-purple-900  shadow-md shadow-gray-800">
       {/* Logo part */}
       <Link href="/">
@@ -78,9 +78,9 @@ const Navbar = () => {
       </div>
       </Link>
 
-      {/* Navlist part */}
+      {/* Navlist part for  large & medium device */}
       <div>
-        <ul className="flex gap-5 uppercase">
+        <ul className="gap-5 uppercase  lg:flex md:flex sm: hidden">
           {navLists.map(({ path, title }) => (
            <div key={path} className="hover-hr">
                <li onClick={(e) => handleRouteClick(e, path)} className="text-white hover:text-purple-200 transition-colors">
@@ -94,6 +94,7 @@ const Navbar = () => {
         </ul>
       </div>
     </nav>
+    {/* go top button  */}
     {isVisible && (
         <div 
         onClick={scrollToTop}
