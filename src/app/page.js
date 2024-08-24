@@ -21,7 +21,7 @@ const Home = () => {
 
   
   return (
-    <div className='pt-[75px] max-w-6xl mx-auto'>
+    <div className='pt-[75px] max-w-6xl sm: px-[20px] mx-auto'>
       <ParticlesBg num={80} type="cobweb" bg={true} />
       <Banner/>
       <HomeDescription/>

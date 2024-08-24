@@ -17,7 +17,7 @@ const Banner = () => {
     <div className={nunito.className}>
       <div
         style={{ justifyItems: "center", alignItems: "center" }}
-        className="grid sm:grid-cols-1 lg:grid-cols-2 items-center pb-14"
+        className="grid sm:grid-cols-1 lg:grid-cols-2 items-center lg:pt-0 md:pt-0 sm: pt-16"
       >
         {/* Heading section */}
         <div className="sm:ms-3 lg:ms-20 lg:mt-[150px] md:mt-[150px] sm:mt-[120px]">
@@ -82,10 +82,10 @@ const Banner = () => {
             src={bannerimg}
             alt="Banner Image"
           />
-          <div className="animate-bounce absolute top-[0px] left-[0px] mt-[100px] ml-[0px]">
+          <div className="animate-bounce absolute top-[0px] left-[0px] mt-[100px] ml-[20px]">
             <Image className="w-[55px] bannerFiterimg" src={nextjs} alt="" />
           </div>
-          <div className="animate-bounce absolute bottom-[0px] right-[0px] mb-[60px] -mr-[30px]">
+          <div className="animate-bounce absolute bottom-[0px] right-[0px] mb-[60px] -mr-[20px]">
             <Image className="w-[55px] bannerFiterimg" src={reactjs} alt="" />
           </div>
         </div>
