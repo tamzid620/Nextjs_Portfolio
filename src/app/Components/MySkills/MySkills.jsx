@@ -100,7 +100,7 @@ const MySkills = () => {
   return (
     <div id="mySkills" className=" py-14 bg-white">
       <h2
-        style={{ fontFamily: "Arsenal SC, sans-serif" }}
+        
         className={`${arsenal.className} text-4xl uppercase flex justify-center mb-5`}
       >
         My Skills

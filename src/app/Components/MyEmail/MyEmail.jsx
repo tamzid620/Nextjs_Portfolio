@@ -72,7 +72,7 @@ const MyEmail = () => {
             {/* picture information seciton  */}
             <div className="text-lg">
               <Image
-                className="w-[500px] rounded-3xl mb-5"
+                className="w-[500px] rounded-lg mb-5"
                 src={emailImage}
                 alt=""
               />
