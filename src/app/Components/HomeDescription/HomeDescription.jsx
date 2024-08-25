@@ -3,9 +3,9 @@ import "./HomeDescription.css";
 import Image from "next/image";
 import { Nunito_Sans } from "next/font/google";
 import { Arsenal } from "next/font/google";
-import img1 from "@/assests/icon/Architecture.png";
-import img2 from "@/assests/icon/UserExperience.png";
-import img3 from "@/assests/icon/StackMastery.png";
+import img1 from "@/assests/icon/Architecture-1.png";
+import img2 from "@/assests/icon/UserExperience-1.png";
+import img3 from "@/assests/icon/StackMastery-1.png";
 
 const nunito = Nunito_Sans({ subsets: ["latin"] });
 const arsenal = Arsenal({
