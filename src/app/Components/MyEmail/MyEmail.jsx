@@ -67,7 +67,7 @@ const MyEmail = () => {
 
   return (
     <>
-      <div id="contact" className={`${nunito.className} py-20 bg-white`}>
+      <div id="contact" className={`${nunito.className} py-20`}>
         <h2
           className={`${arsenal.className} text-4xl text-purple-800 uppercase flex justify-center mb-5`}
         >

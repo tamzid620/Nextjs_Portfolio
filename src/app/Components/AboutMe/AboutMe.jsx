@@ -17,7 +17,7 @@ const arsenal = Arsenal({
 
 const AboutMe = () => {
     return (
-        <div id="about" className='py-14 bg-white'>
+        <div id="about" className='py-14'>
                  <h2
         
         className={`${arsenal.className} text-4xl text-purple-800 uppercase flex justify-center mb-5`}

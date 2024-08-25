@@ -98,7 +98,7 @@ const MySkills = () => {
   ];
 
   return (
-    <div id="mySkills" className="py-14 bg-white">
+    <div id="mySkills" className="py-14">
       <h2
         
         className={`${arsenal.className} text-purple-800 text-4xl uppercase flex justify-center mb-5`}
