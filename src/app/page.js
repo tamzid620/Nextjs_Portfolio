@@ -22,11 +22,11 @@ const Home = () => {
 
   return (
     <div className="">
-      <ParticlesBg num={80} type="cobweb" bg={true} />
-    <div className="pt-[75px] lg:px-[70px] sm: px-[20px] mx-auto">
+      <div className="pt-[75px] max-w-6xl sm: px-[20px] mx-auto">
+      <ParticlesBg num={50} type="cobweb" bg={true} />
       <Banner href="#banner" />
-    </div>
-      <div className="pt-[75px] lg:px-[70px] sm: px-[20px] mx-auto bg-white">
+      </div>
+      <div className="max-w-6xl sm: px-[20px] mx-auto ">
         <HomeDescription />
         <MySkills href="#mySkills" />
         <AboutMe href="#about" />
