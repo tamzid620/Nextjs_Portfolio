@@ -1,0 +1,14 @@
+.img-zoom {
+    overflow: hidden;
+    height: 350px;
+}
+.card-image{
+    height: 350px;
+}
+.zoom-effect {
+    transition: transform 0.5s ease;
+}
+.zoom-effect:hover{
+    transform: scale(1.1);
+}
+

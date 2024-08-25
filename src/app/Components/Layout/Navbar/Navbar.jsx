@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const navLists = [
     {
-      path: "/",
+      path: "#banner",
       title: "Home",
     },
     {
@@ -27,7 +27,7 @@ const Navbar = () => {
       title: "Projects",
     },
     {
-      path: "",
+      path: "#about",
       title: "About",
     },
     {

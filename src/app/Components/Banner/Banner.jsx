@@ -14,10 +14,10 @@ const Banner = () => {
   Aos.init();
 
   return (
-    <div className={nunito.className}>
+    <div id="banner" className={nunito.className}>
       <div
         style={{ justifyItems: "center", alignItems: "center" }}
-        className="grid sm:grid-cols-1 lg:grid-cols-2 items-center lg:pt-0 md:pt-0 sm: pt-16"
+        className="grid sm:grid-cols-1 lg:grid-cols-2 items-center lg:pb-0 md:pt-0 sm: pt-16"
       >
         {/* Heading section */}
         <div className="sm:ms-3 lg:ms-20 lg:mt-[150px] md:mt-[150px] sm:mt-[120px]">
@@ -48,7 +48,7 @@ const Banner = () => {
               data-aos-easing="linear"
               data-aos-duration="1500"
             >
-              I’m a passionate web developer from Bangladesh, <br />
+              A passionate web developer from Bangladesh, <br />
                specializing in dynamic, user-friendly websites with expertise in HTML, CSS, Next.js, React.js, JavaScript, Express.js, and MongoDB.
             </span>
           </p>

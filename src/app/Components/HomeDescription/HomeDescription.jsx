@@ -36,7 +36,7 @@ const HomeDescription = () => {
   ];
 
   return (
-    <div className="pt-[150px] pb-14 bg-white flex justify-center text-center">
+    <div className="pt-[150px] mt-14 pb-14 bg-white flex justify-center text-center">
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm: grid-cols-1 gap-8">
         {descriptionData.map(({ logo, title, description }) => (
           <div key={title}>
