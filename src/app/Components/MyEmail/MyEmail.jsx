@@ -67,13 +67,13 @@ const MyEmail = () => {
 
   return (
     <>
-      <div id="contact" className={`${nunito.className} pt-20 mb-20 bg-white`}>
+      <div id="contact" className={`${nunito.className} py-20 bg-white`}>
         <h2
-          className={`${arsenal.className} text-4xl uppercase flex justify-center mb-5`}
+          className={`${arsenal.className} text-4xl text-purple-800 uppercase flex justify-center mb-5`}
         >
           Send Your Email
         </h2>
-        <hr className="border-purple-900" />
+        <hr className="border-[1px] border-purple-800" />
         <div className="flex justify-center mt-10">
           <div
             className="grid sm:grid-cols-1 lg:grid-cols-2"

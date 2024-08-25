@@ -5,10 +5,10 @@
 .card-image{
     height: 350px;
 }
-.zoom-effect {
+.img-zoom-effect {
     transition: transform 0.5s ease;
 }
-.zoom-effect:hover{
+.img-zoom-effect:hover{
     transform: scale(1.1);
 }
 

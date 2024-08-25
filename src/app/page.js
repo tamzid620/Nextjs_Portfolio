@@ -1,13 +1,13 @@
-"use client" ;
-import dynamic from 'next/dynamic';
-import { useEffect, useState } from 'react';
-import Banner from './Components/Banner/Banner';
-import MySkills from './Components/MySkills/MySkills';
-import MyEmail from './Components/MyEmail/MyEmail';
-import HomeDescription from './Components/HomeDescription/HomeDescription';
-import AboutMe from './Components/AboutMe/AboutMe';
+"use client";
+import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
+import Banner from "./Components/Banner/Banner";
+import MySkills from "./Components/MySkills/MySkills";
+import MyEmail from "./Components/MyEmail/MyEmail";
+import HomeDescription from "./Components/HomeDescription/HomeDescription";
+import AboutMe from "./Components/AboutMe/AboutMe";
 
-const ParticlesBg = dynamic(() => import('particles-bg'), { ssr: false });
+const ParticlesBg = dynamic(() => import("particles-bg"), { ssr: false });
 
 const Home = () => {
   const [mounted, setMounted] = useState(false);
@@ -19,15 +19,19 @@ const Home = () => {
   if (!mounted) {
     return null;
   }
-  
+
   return (
-    <div className='pt-[75px] max-w-6xl sm: px-[20px] mx-auto'>
+    <div className="">
       <ParticlesBg num={80} type="cobweb" bg={true} />
-      <Banner href="#banner"/>
-      <HomeDescription/>
-      <MySkills href="#mySkills"/>
-      <AboutMe href="#about"/>
-      <MyEmail href = "#contact"/>
+    <div className="pt-[75px] lg:px-[70px] sm: px-[20px] mx-auto">
+      <Banner href="#banner" />
+    </div>
+      <div className="pt-[75px] lg:px-[70px] sm: px-[20px] mx-auto bg-white">
+        <HomeDescription />
+        <MySkills href="#mySkills" />
+        <AboutMe href="#about" />
+        <MyEmail href="#contact" />
+      </div>
     </div>
   );
 };

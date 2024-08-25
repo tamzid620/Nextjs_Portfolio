@@ -14,7 +14,7 @@ const RootLayout = ({ children }) => {
 
   return (
     <html lang="en">
-        <body className={nunito.className}>
+        <body className={`${nunito.className} `}>
           <ClientWrapper>
             {children}
           </ClientWrapper>

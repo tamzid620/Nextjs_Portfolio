@@ -101,15 +101,15 @@ const MySkills = () => {
     <div id="mySkills" className="py-14 bg-white">
       <h2
         
-        className={`${arsenal.className} text-4xl uppercase flex justify-center mb-5`}
+        className={`${arsenal.className} text-purple-800 text-4xl uppercase flex justify-center mb-5`}
       >
         My Skills
       </h2>
-      <hr className="border-purple-900" />
+      <hr className="border-[1px] border-purple-800" />
       {/* ----------------flex div------------------  */}
       <div
         data-aos="fade-down"
-        className="flex justify-center mt-10 uppercase font-semibold"
+        className="flex justify-center mt-10 uppercase font-semibold text-black"
       >
         {/* -----------------grid div -------------- */}
         <div

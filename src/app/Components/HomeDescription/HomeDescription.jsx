@@ -36,15 +36,15 @@ const HomeDescription = () => {
   ];
 
   return (
-    <div className="pt-[150px] mt-14 pb-14 bg-white flex justify-center text-center">
+    <div className="pt-[20px] pb-14 bg-white flex justify-center text-center">
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm: grid-cols-1 gap-8">
         {descriptionData.map(({ logo, title, description }) => (
           <div key={title}>
             <span className="flex justify-center mb-3">
                 <Image className="fiterdiscIcon zoom-in-out w-[100px]" src={logo} alt="" />
             </span>
-            <h1 className={`${arsenal.className} mb-3 text-2xl `}>{title}</h1>
-            <p className={`${nunito.className} text-md`}>{description}</p>
+            <h1 className={`${arsenal.className} mb-3 text-2xl text-purple-800`}>{title}</h1>
+            <p className={`${nunito.className} text-md text-black`}>{description}</p>
           </div>
         ))}
       </div>

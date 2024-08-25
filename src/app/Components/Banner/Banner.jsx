@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 import nextjs from "@/assests/icon/Next.js.png";
 import reactjs from "@/assests/icon/reactLogo-modified.png";
+import Link from "next/link";
 
 const nunito = Nunito_Sans({ subsets: ["latin"] });
 
@@ -14,7 +15,7 @@ const Banner = () => {
   Aos.init();
 
   return (
-    <div id="banner" className={nunito.className}>
+    <div id="banner" className={`${nunito.className} mb-16`}>
       <div
         style={{ justifyItems: "center", alignItems: "center" }}
         className="grid sm:grid-cols-1 lg:grid-cols-2 items-center lg:pb-0 md:pt-0 sm: pt-16"
@@ -52,7 +53,7 @@ const Banner = () => {
                specializing in dynamic, user-friendly websites with expertise in HTML, CSS, Next.js, React.js, JavaScript, Express.js, and MongoDB.
             </span>
           </p>
-          <a
+          <Link
             href="https://drive.google.com/file/d/1RincmeyzN1IkgezEKJms6OJPHqLrnF8_/view?usp=sharing"
             rel="noreferrer"
             target="_blank"
@@ -68,13 +69,13 @@ const Banner = () => {
             >
               Resume
             </button>
-          </a>
+          </Link>
         </div>
         {/* Banner picture section */}
         <div className="relative">
         <div className="relative">
           <Image
-            className=" w-[350px] lg:mt-[100px] md:mt-0 sm:mt-0 rounded-full"
+            className="bannerFiterimg w-[350px] lg:mt-[100px] md:mt-0 sm:mt-0 rounded-full"
             src={bannerimg}
             alt="Banner Image"
           />
