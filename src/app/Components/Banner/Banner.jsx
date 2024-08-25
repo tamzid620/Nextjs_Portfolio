@@ -85,7 +85,9 @@ const Banner = () => {
           <div className="animate-bounce absolute top-[0px] left-[0px] mt-[100px] ml-[20px]">
             <Image className="w-[55px] bannerFiterimg" src={nextjs} alt="" />
           </div>
-          <div className="animate-bounce absolute bottom-[0px] right-[0px] mb-[60px] -mr-[20px]">
+          <div className="animate-bounce absolute bottom-[0px] right-[0px] md:mb-[60px] md:-mr-[25px]
+          sm: mb-[205px] sm: mr-[15px]
+          ">
             <Image className="w-[55px] bannerFiterimg" src={reactjs} alt="" />
           </div>
         </div>
