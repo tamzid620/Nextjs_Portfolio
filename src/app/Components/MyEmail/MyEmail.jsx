@@ -2,6 +2,8 @@ import './MyEmail.css'
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Nunito_Sans } from "next/font/google";
+import { Arsenal } from "next/font/google";
 import DefalutLoading from "../DefalutLoading/DefalutLoading";
 import emailjs from "emailjs-com";
 import emailImage from "@/assests/icon/email.gif";
@@ -19,6 +21,12 @@ import {
 import Swal from "sweetalert2";
 
 emailjs.init("PIOjzCl1ftxF_58QU");
+
+const nunito = Nunito_Sans({ subsets: ["latin"] });
+const arsenal = Arsenal({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const MyEmail = () => {
   const [loading, setLoading] = useState(false);
@@ -59,17 +67,15 @@ const MyEmail = () => {
 
   return (
     <>
-      <div id="contact" className=" py-20 bg-white">
+      <div id="contact" className={`${nunito.className} py-20 bg-white`}>
         <h2
-          style={{ fontFamily: "Arsenal SC, sans-serif" }}
-          className="text-4xl uppercase flex justify-center mb-5"
+          className={`${arsenal.className} text-4xl uppercase flex justify-center mb-5`}
         >
           Send Your Email
         </h2>
         <hr className="border-purple-900" />
         <div className="flex justify-center mt-10">
           <div
-            style={{ fontFamily: "Nunito Sans, sans-serif" }}
             className="grid sm:grid-cols-1 lg:grid-cols-2"
           >
             {/* picture information seciton  */}

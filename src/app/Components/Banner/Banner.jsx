@@ -48,12 +48,8 @@ const Banner = () => {
               data-aos-easing="linear"
               data-aos-duration="1500"
             >
-              A passionate web developer dedicated to crafting exceptional
-              online experiences. With a keen eye for design and a love for
-              coding, I specialize in creating dynamic and user-friendly
-              websites that leave a lasting impression from front-end
-              development using HTML, CSS, Nextjs, Reactjs, and JavaScript to
-              back-end programming with Expressjs and Mongodb and more.
+              I’m a passionate web developer from Bangladesh, <br />
+               specializing in dynamic, user-friendly websites with expertise in HTML, CSS, Next.js, React.js, JavaScript, Express.js, and MongoDB.
             </span>
           </p>
           <a
