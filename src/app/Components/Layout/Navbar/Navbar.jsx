@@ -1,7 +1,8 @@
 "use client" ;
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { IoIosArrowDropupCircle } from "react-icons/io";
+// import { IoIosArrowDropupCircle } from "react-icons/io";
+import { PiArrowFatLineUpFill  } from "react-icons/pi";
 import logo from "@/assests/icon/svgicon.png";
 import Link from "next/link";
 import "./Navbar.css"
@@ -128,11 +129,12 @@ const Navbar = () => {
         <div 
         onClick={scrollToTop}
         title="slide button"
-        className="fixed bottom-4 right-4 bg-black 
-        shadow-lg shadow-gray-800
-         rounded-full w-[50px] border border-gray-300 z-50"
+        className="fixed bottom-4 right-4 bg-purple-900 
+        flex items-center justify-center
+        shadow-lg shadow-purple-800
+         rounded-full w-[40px] h-[40px] border-2 border-black z-50"
         >
-          <IoIosArrowDropupCircle className="text-purple-200 hover:text-white" size={50} />
+          <PiArrowFatLineUpFill  className="text-purple-200 hover:text-white" size={30} />
         </div>
       )}
     </div>

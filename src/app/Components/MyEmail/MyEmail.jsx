@@ -1,19 +1,22 @@
-import Swal from "sweetalert2";
+import './MyEmail.css'
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import DefalutLoading from "../DefalutLoading/DefalutLoading";
+import emailjs from "emailjs-com";
 import emailImage from "@/assests/icon/email.gif";
+import facebook from "@/assests/icon/facebook.png";
+import instagram from "@/assests/icon/instagram.png";
+import linkedin from "@/assests/icon/linkedin.png";
+import github from "@/assests/icon/github.png";
+import whatsapp from "@/assests/icon/whatsApp.png";
 import {
   MdMarkEmailUnread,
   MdCall,
   MdWhatsapp,
   MdLocationOn,
 } from "react-icons/md";
-import facebook from "@/assests/icon/facebook.png";
-import instagram from "@/assests/icon/instagram.png";
-import linkedin from "@/assests/icon/linkedin.png";
-import github from "@/assests/icon/github.png";
-import emailjs from "emailjs-com";
-import Image from "next/image";
-import { useState } from "react";
-import DefalutLoading from "../DefalutLoading/DefalutLoading";
+import Swal from "sweetalert2";
 
 emailjs.init("PIOjzCl1ftxF_58QU");
 
@@ -63,7 +66,7 @@ const MyEmail = () => {
         >
           Send Your Email
         </h2>
-        <hr className="border-[#5BCCF6]" />
+        <hr className="border-purple-900" />
         <div className="flex justify-center mt-10">
           <div
             style={{ fontFamily: "Nunito Sans, sans-serif" }}
@@ -99,39 +102,56 @@ const MyEmail = () => {
                   </h2>
                   <div className="grid grid-flow-col gap-4">
                     <div>
-                      <a target="_blank" href="https://www.facebook.com/tamzid.ull.monir512">
+                      <Link target="_blank" href="https://www.facebook.com/tamzid.ull.monir512">
                         <Image
+                        className="icon-bounce shadow-lg shadow-purple-800 border-2 border-purple-200 rounded-full"
                           style={{ width: "30px" }}
                           src={facebook}
                           alt=""
                         />
-                      </a>
+                      </Link>
                     </div>
 
                     <div>
-                      <a target="_blank" href="https://www.instagram.com/Tamzid_Ull_Monir/">
+                      <Link target="_blank" href="https://www.instagram.com/Tamzid_Ull_Monir/">
                         <Image
+                        className="icon-bounce shadow-lg shadow-purple-800 border-2 border-purple-200 rounded-full"
                           style={{ width: "30px" }}
                           src={instagram}
                           alt=""
                         />
-                      </a>
+                      </Link>
                     </div>
 
                     <div>
-                      <a target="_blank" href="https://www.linkedin.com/in/tamzid-ull-monir-96b163260/">
+                      <Link target="_blank" href="https://www.linkedin.com/in/tamzid-ull-monir-96b163260/">
                         <Image
+                        className="icon-bounce shadow-lg shadow-purple-800 border-2 border-purple-200 rounded-full"
                           style={{ width: "30px" }}
                           src={linkedin}
                           alt=""
                         />
-                      </a>
+                      </Link>
                     </div>
 
                     <div>
-                      <a target="_blank" href="https://github.com/tamzid620">
-                        <Image style={{ width: "30px" }} src={github} alt="" />
-                      </a>
+                      <Link target="_blank" href="https://github.com/tamzid620">
+                        <Image
+                        className="icon-bounce shadow-lg shadow-purple-800 border-2 border-purple-200 rounded-full" style={{ width: "30px" }}
+                         src={github} 
+                         alt="" 
+                         />
+                      </Link>
+                    </div>
+
+                    <div>
+                      <Link target="_blank" href="https://wa.me/+8801852951963">
+                        <Image
+                        className="icon-bounce shadow-lg shadow-purple-800 border-2 border-purple-200 rounded-full" style={{ width: "30px" }}
+                         src={whatsapp} 
+                         alt="" 
+                         />
+                      </Link>
                     </div>
                   </div>
                 </div>
