@@ -1,4 +1,4 @@
-.img-zoom {
+/* .img-zoom {
     overflow: hidden;
     height: 350px;
 }
@@ -10,5 +10,10 @@
 }
 .img-zoom-effect:hover{
     transform: scale(1.1);
-}
+} */
+/* Define keyframes for the animation */
 
+
+  .sectionFiterimg{
+    filter: drop-shadow(1px 1px 5px rgba(108, 3, 165, 0.553)) ;
+}

@@ -28,8 +28,8 @@ const Home = () => {
       </div>
       <div className="max-w-6xl sm: px-[20px] mx-auto ">
         <HomeDescription />
-        <MySkills href="#mySkills" />
         <AboutMe href="#about" />
+        <MySkills href="#mySkills" />
         <MyEmail href="#contact" />
       </div>
     </div>
