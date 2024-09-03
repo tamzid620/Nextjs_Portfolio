@@ -107,29 +107,8 @@ const MyEmail = () => {
                     Social Links:
                   </h2>
                   <div className="grid grid-flow-col gap-4">
-                    <div>
-                      <Link target="_blank" href="https://www.facebook.com/tamzid.ull.monir512">
-                        <Image
-                        className="icon-bounce shadow-lg shadow-purple-800 border-2 border-purple-200 rounded-full"
-                          style={{ width: "30px" }}
-                          src={facebook}
-                          alt=""
-                        />
-                      </Link>
-                    </div>
-
-                    <div>
-                      <Link target="_blank" href="https://www.instagram.com/Tamzid_Ull_Monir/">
-                        <Image
-                        className="icon-bounce shadow-lg shadow-purple-800 border-2 border-purple-200 rounded-full"
-                          style={{ width: "30px" }}
-                          src={instagram}
-                          alt=""
-                        />
-                      </Link>
-                    </div>
-
-                    <div>
+                    
+                  <div>
                       <Link target="_blank" href="https://www.linkedin.com/in/tamzid-ull-monir-96b163260/">
                         <Image
                         className="icon-bounce shadow-lg shadow-purple-800 border-2 border-purple-200 rounded-full"
@@ -157,6 +136,27 @@ const MyEmail = () => {
                          src={whatsapp} 
                          alt="" 
                          />
+                      </Link>
+                    </div>
+                    <div>
+                      <Link target="_blank" href="https://www.facebook.com/tamzid.ull.monir512">
+                        <Image
+                        className="icon-bounce shadow-lg shadow-purple-800 border-2 border-purple-200 rounded-full"
+                          style={{ width: "30px" }}
+                          src={facebook}
+                          alt=""
+                        />
+                      </Link>
+                    </div>
+
+                    <div>
+                      <Link target="_blank" href="https://www.instagram.com/Tamzid_Ull_Monir/">
+                        <Image
+                        className="icon-bounce shadow-lg shadow-purple-800 border-2 border-purple-200 rounded-full"
+                          style={{ width: "30px" }}
+                          src={instagram}
+                          alt=""
+                        />
                       </Link>
                     </div>
                   </div>
