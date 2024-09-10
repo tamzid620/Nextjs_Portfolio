@@ -5,6 +5,8 @@ import { Arsenal } from "next/font/google";
 import Image from "next/image";
 import img from "@/assests/image/erasePhoto.png";
 import Link from "next/link";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const nunito = Nunito_Sans({
   weight: ["400", "600"],
@@ -16,6 +18,8 @@ const arsenal = Arsenal({
 });
 
 const AboutMe = () => {
+
+  Aos.init();
 
   const navigation = [
     {
@@ -38,7 +42,9 @@ const AboutMe = () => {
         <div className="relative">
           <div className="relative">
               <Image className="card-image rounded-md" src={img} alt="" />
-            <p className="absolute sectionFiterimg top-[0px] left-[0px] md:mt-[40px] md:ml-[0px] sm: mt-[0px] sm: ml-[0px]
+            <p
+            data-aos="fade-right" data-aos-offset="100"
+            className="absolute sectionFiterimg top-[0px] left-[0px] md:mt-[40px] md:ml-[0px] sm: mt-[0px] sm: ml-[0px]
             w-[180px] p-5 bg-white rounded-md font-bold 
             flex justify-center items-center gap-5">
               <span className="text-5xl text-purple-800">02</span>
@@ -46,7 +52,9 @@ const AboutMe = () => {
                 Years of <br /> Success
               </span>
             </p>
-            <p className="absolute sectionFiterimg bottom-[0px] right-[0px] md:mb-[50px] md:-mr-[25px] sm: mb-[50px] sm: mr-[0px]
+            <p 
+            data-aos="fade-left" data-aos-offset="100"
+            className="absolute sectionFiterimg bottom-[0px] right-[0px] md:mb-[50px] md:-mr-[25px] sm: mb-[50px] sm: mr-[0px]
              w-[180px] p-5 bg-white rounded-md font-bold 
              flex justify-center items-center gap-5">
               <span className="text-5xl text-green-500">74</span>

@@ -11,7 +11,7 @@ import  menuLogo from '@/assests/icon/menu.png'
 const Navbar = () => {
 
   const [isVisible, setIsVisible] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false) ;
+  const [menuOpen, setMenuOpen] = useState(false) ; 
 
   const navLists = [
     {
@@ -23,7 +23,7 @@ const Navbar = () => {
       title: "Skills",
     },
     {
-      path: "",
+      path: "#projects",
       title: "Projects",
     },
     {
@@ -60,6 +60,7 @@ const Navbar = () => {
     });
   };
 
+  
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

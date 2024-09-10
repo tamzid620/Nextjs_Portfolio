@@ -19,6 +19,8 @@ import {
   MdLocationOn,
 } from "react-icons/md";
 import Swal from "sweetalert2";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 emailjs.init("PIOjzCl1ftxF_58QU");
 
@@ -30,6 +32,7 @@ const arsenal = Arsenal({
 
 const MyEmail = () => {
   const [loading, setLoading] = useState(false);
+  Aos.init();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -79,7 +82,8 @@ const MyEmail = () => {
             className="grid sm:grid-cols-1 lg:grid-cols-2"
           >
             {/* picture information seciton  */}
-            <div className="text-lg">
+            <div  data-aos="fade-left" data-aos-offset="100"
+            className="text-lg">
               <Image
                 className="w-[500px] rounded-lg mb-5"
                 src={emailImage}
@@ -165,7 +169,7 @@ const MyEmail = () => {
             </div>
 
             {/* email input section  */}
-            <div>
+            <div data-aos="fade-right" data-aos-offset="100">
               <form
                 onSubmit={handleSubmit}
                 action="/submit-feedback"

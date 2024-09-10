@@ -6,6 +6,7 @@ import MySkills from "./Components/MySkills/MySkills";
 import MyEmail from "./Components/MyEmail/MyEmail";
 import HomeDescription from "./Components/HomeDescription/HomeDescription";
 import AboutMe from "./Components/AboutMe/AboutMe";
+import Projects from "./Components/Projects/Projects";
 
 const ParticlesBg = dynamic(() => import("particles-bg"), { ssr: false });
 
@@ -30,6 +31,7 @@ const Home = () => {
         <HomeDescription />
         <MySkills href="#mySkills" />
         <AboutMe href="#about" />
+        <Projects href="#projects"/>
         <MyEmail href="#contact" />
       </div>
     </div>
