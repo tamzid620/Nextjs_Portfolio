@@ -236,7 +236,7 @@ const MyEmail = () => {
                   </label>
                   <textarea
                     id="message"
-                    name="feedback"
+                    name="message"
                     rows="5"
                     required
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
