@@ -75,7 +75,7 @@ const Banner = () => {
         <div className="relative">
         <div className="relative">
           <Image
-          className="bannerFiterimg w-[350px] lg:mt-[100px] md:mt-0 sm:mt-0 rounded-full"
+          className=" w-[350px] lg:mt-[100px] md:mt-0 sm:mt-0 rounded-full"
             src={bannerimg}
             alt="Banner Image"
           />
